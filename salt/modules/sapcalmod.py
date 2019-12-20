@@ -26,7 +26,7 @@ try:
 except ImportError:  # pragma: no cover
     HAS_SAPCAL = False
 
-__virtualname__ = 'hana'
+__virtualname__ = 'sapcal'
 
 
 def __virtual__():  # pragma: no cover
@@ -64,11 +64,7 @@ def is_installed(
 
         salt '*' sapcal.is_installed your_path root linux
     '''
-    return cal.CalInstance.install(
-        software_path,
-        root_user,
-        root_password,
-    )
+    return cal.CalInstance.is_installed(software_path, root_user, root_password)
 
 
 def install(
