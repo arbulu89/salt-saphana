@@ -49,6 +49,8 @@ cp -R salt/modules/drbdmod.py %{buildroot}/srv/salt/_modules
 cp -R salt/states/drbdmod.py %{buildroot}/srv/salt/_states
 cp -R salt/modules/netweavermod.py %{buildroot}/srv/salt/_modules
 cp -R salt/states/netweavermod.py %{buildroot}/srv/salt/_states
+cp -R salt/modules/sapcalmod.py %{buildroot}/srv/salt/_modules
+cp -R salt/states/sapcalmod.py %{buildroot}/srv/salt/_states
 
 
 %files
